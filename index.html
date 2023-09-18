@@ -4,6 +4,18 @@
         <script src="birthday-cake.js"></script>
  		<link rel = "stylesheet" type = "text/css" media = "all" href = "birthday-cake.css"/>
         <title>Birthday Cake</title>
+        <script>
+            // Create an audio element
+var audio = new Audio('hbd.mp3');
+
+// Play the audio when the page is loaded
+window.addEventListener('click', function() {
+  audio.play();
+});
+window.addEventListener('touchstart', function() {
+  audio.play();
+});
+        </script>
     </head>
     <body onload="init();">
         <div class="cake" onClick="putOutCandles();">
